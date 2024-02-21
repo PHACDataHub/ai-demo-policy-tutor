@@ -61,9 +61,17 @@ app.get('/', async (req, res) => {
 </head>
 <body>
     <div>
-        <h1>Référentiel d'informations sur l'équipe de surveillance | Surveillance Team Information Repository</h1>
+        <h1>Tuteur en politiques de l'ASPC | PHAC Policy Tutor</h1>
+        <!-- Widget JavaScript bundle -->
         <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
-        <gen-search-widget configId="e9a146aa-2908-4896-a424-d21837c24d46" location="us" triggerId="searchWidgetTrigger"></gen-search-widget>
+
+        <!-- Search widget element is not visible by default -->
+        <gen-search-widget
+            configId="020abb58-f726-4928-b74c-57f778264507"
+            triggerId="searchWidgetTrigger">
+        </gen-search-widget>
+
+        <!-- Element that opens the widget on click. It does not have to be an input -->
         <div class="info-text">
         <input placeholder="Poser une question | Ask a question" id="searchWidgetTrigger" />
         </div>
